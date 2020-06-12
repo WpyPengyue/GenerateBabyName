@@ -70,7 +70,9 @@ public class GenerateBabyName {
             if ("".equals(word)){
                 continue;
             }
-            words.add(wordArr[i].trim());
+            if(!words.contains(word)){
+                words.add(wordArr[i].trim());
+            }
         }
         return words;
     }
